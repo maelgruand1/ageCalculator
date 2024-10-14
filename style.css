@@ -1,0 +1,83 @@
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Style the main title (h1 element with class "main-title") */
+h1.main-title {
+  text-align: center;
+  font-size: 52px;
+  font-family: 'Montserrat', serif;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #EA3B20; /* Updated color */
+}
+
+/* Underlined text with custom underline color */
+span.underline {
+  text-decoration: underline;
+  text-decoration-color: #00f; /* Underline color */
+  color: #EA3B20; /* Text color */
+}
+
+/* Style the "calculate" button */
+button.btn-start{
+  font-size: 18px;
+  font-family: 'Montserrat', serif;
+  padding: 10px 20px;
+  background-color: #00ffff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: fit-content;
+  margin: 20px auto; /* Center the button horizontally */
+  border: none;
+  cursor: pointer;
+  font-style: bold;
+  transition: background-color 0.5s ease, transform 0.8s ease, text-decoration 0.4s ease; /* Ajoute cette ligne */
+}
+
+.btn-start:hover{
+    background-color: red;
+    transform: scale(2.4);
+    text-decoration: underline;
+}
+
+/* Style the "start" element (presumably a button or link) */
+.start {
+  font-size: 30px;
+  font-family: 'Montserrat', serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  width: fit-content;
+  margin: 20px auto; /* Center horizontally */
+}
+
+/* Style the aside element */
+aside {
+    width: 100%;
+    padding: 30px; /* Ajoute du padding ici */
+    text-align: center;
+    font-weight: bold;
+    background-color: lightblue;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 20px; /* Add space below the aside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* Style the background of the entire page (html element) */
+html {
+  background: linear-gradient(540deg, #FAFE80 40%, #DEFC80 80%, #F2D97C 150%);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,140 @@
+/* Import Montserrat font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  background: linear-gradient(540deg, #fafe80 40%, #defc80 80%, #f2d97c 150%);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0; /* Supprime les marges par défaut pour le body */
+  display: flex; /* Utilise flexbox pour aligner le contenu */
+  flex-direction: column; /* Aligne le contenu en colonne */
+  justify-content: flex-start; /* Aligne le contenu en haut */
+}
+
+header {
+  background-color: #000; /* Couleur du fond */
+  padding: 20px; /* Espacement intérieur */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+  width: 100%; /* Prend toute la largeur */
+  position: sticky; /* Permet au header de rester en haut lors du défilement */
+  top: 0; /* Positionne le header en haut */
+  z-index: 1000; /* Assure que le header soit au-dessus des autres éléments */
+}
+
+nav {
+  display: flex; /* Utilise flexbox pour le positionnement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  margin-top: 20px; /* Marge en haut pour espacer le nav du header */
+}
+
+button.btn-start {
+  font-size: 18px;
+  font-family: "Montserrat", serif;
+  padding: 10px 20px;
+  background-color: #00ffff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: fit-content;
+  margin: 20px 0; /* Marge en haut et en bas */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.5s ease, transform 0.8s ease,
+    text-decoration 0.4s ease; /* Ajoute cette ligne */
+  position: relative; /* Position relative pour utiliser left */
+  left: -890px; /* Décale le bouton de 890 pixels vers la gauche */
+}
+
+.btn-start:hover {
+  background-color: red; /* Couleur de fond du bouton au survol */
+  transform: scale(
+    2.05
+  ); /* Échelle réduite pour un effet de survol plus subtil */
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Gère le texte p class txt */
+p.txt {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Montserrat", serif;
+  font-style: italic;
+}
+
+/* Style général pour le formulaire */
+.userForm {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  max-width: 400px; /* Largeur maximale du formulaire */
+  margin: 20px auto; /* Centre le formulaire horizontalement avec une marge en haut et en bas */
+  padding: 20px; /* Espacement intérieur */
+}
+
+.userDate {
+  display: flex;
+  flex-direction: column; /* Aligne les labels et les champs d'entrée en colonne */
+}
+
+label {
+  margin-bottom: 5px; /* Espacement en bas du label */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: calc(
+    100% - 20px
+  ); /* Remplir la largeur disponible, moins les marges */
+  margin-bottom: 15px; /* Ajoute un espacement en bas de chaque champ d'entrée */
+  padding: 10px; /* Ajoute du padding pour un meilleur espacement à l'intérieur */
+  border: 1px solid #ccc; /* Bordure pour les champs d'entrée */
+  border-radius: 5px; /* Coins arrondis pour les champs d'entrée */
+  font-family: "Montserrat", serif; /* Utilisation de la police Montserrat */
+  cursor: text; /* Curseur de texte */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #ea3b20; /* Bordure rouge lors de la sélection */
+  outline: none; /* Retire l'outline par défaut */
+}
+
+button.send,
+button.reset {
+  background-color: cyan; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  padding: 10px 15px; /* Espacement interne */
+  border: none; /* Retire la bordure */
+  border-radius: 5px; /* Coins arrondis */
+  font-size: 16px; /* Taille de police */
+  cursor: pointer; /* Change le curseur au survol */
+  transition: background-color 0.5s ease, transform 0.8s ease,
+    text-decoration 0.4s ease; /* Ajoute cette ligne */
+  margin-right: 10px; /* Marge à droite entre les boutons */
+}
+
+button.send:hover,
+button.reset:hover {
+  background-color: red; /* Couleur du bouton au survol */
+  transform: scale(1.71); /* Agrandissement léger au survol */
+  text-decoration: underline;
+}
+/* Ajout d'un style pour l'affichage du résultat */
+.result-display {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: red;
+}
